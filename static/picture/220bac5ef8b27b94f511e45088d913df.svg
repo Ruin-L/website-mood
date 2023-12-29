@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.051" height="36.044" viewBox="0 0 66.051 36.044">
+<defs>
+<style>
+.a,.c,.e{fill:none;}
+.a,.b,.c{stroke:#2836f6;stroke-width:1.5px;}
+.b{fill:#fff;}.c{stroke-linecap:round;}
+.d{stroke:none;}
+</style>
+</defs>
+<g transform="translate(-1449.228 -359.25)">
+<g transform="translate(1465.295 360)">
+<g class="a" transform="translate(0 3.504)">
+<rect class="d" width="35.409" height="24.28" rx="6"/>
+<rect class="e" x="0.75" y="0.75" width="33.909" height="22.78" rx="5.25"/>
+</g>
+<g class="b" transform="translate(7.082 11.597)">
+<rect class="d" width="20.74" height=".5" style="stroke:#2836f6;"/>
+<!-- <rect class="e" x="0.75" y="0.75" width="19.24"/> -->
+</g>
+<g class="b" transform="translate(7.082 18.679)">
+<rect class="d" width="20.74" height=".5" style="stroke:#2836f6;"/>
+<!-- <rect class="e" x="0.75" y="0.75" width="19.24"/> -->
+</g>
+<path class="c" d="M-11711.5,5014.073v3.7" transform="translate(11728.951 -5014.073)"/>
+<path class="c" d="M-11725.174,5068.6l-4.273,6.676" transform="translate(11737.82 -5041.019)"/>
+<path class="c" d="M-11729.447,5068.6l4.273,6.676" transform="translate(11751.984 -5041.019)"/>
+</g>
+
+</g></svg>

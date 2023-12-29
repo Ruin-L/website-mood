@@ -1,0 +1,364 @@
+.main .rightbg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 46%;
+  height: 100%;
+}
+.main .rightbg img:first-child {
+  width: 100%;
+  object-position: left;
+  height: 100%;
+}
+.main .rightbg img:last-child {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 95vh;
+  opacity: 0;
+  transition: all 1s 2s;
+}
+.main .rightbg img:last-child.aos-animate {
+  opacity: 1;
+}
+.main .text {
+  position: absolute;
+  left: 260px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main .text.aos-animate .left .line {
+  transform: scaleX(1);
+}
+.main .text.aos-animate .left .title {
+  transition-delay: 0.3s;
+}
+.main .text .left {
+  width: 700px;
+}
+.main .text .left .line {
+  width: 34px;
+  height: 4px;
+  background-image: linear-gradient(to right, #02BBEE, #2836F6);
+  border-radius: 4px;
+  margin-bottom: 40px;
+  transform: scaleX(0);
+  transition: all 1s;
+  transform-origin: left;
+}
+.main .text .left .title.aos-animate {
+  transition-delay: 0.3s;
+}
+.main .text .left .title h2 {
+  color: #111;
+  font-size: 44px;
+  font-weight: 400;
+}
+.main .text .left .iconlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 38px;
+}
+.main .text .left .iconlist.aos-animate {
+  transition-delay: 0.6s;
+}
+.main .text .left .iconlist .item {
+  width: 50%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.main .text .left .iconlist .item .img {
+  margin-right: 13px;
+  width: 30px;
+}
+.main .text .left .iconlist .item .img img{
+  min-width: 20px;
+  height: 25px;
+}
+.main .text .left .iconlist .item .content h2 {
+  color: #111;
+  line-height: 30px;
+}
+.main .text .left .iconlist .item .content p {
+  color: #666;
+  line-height: 30px;
+  font-weight: 200;
+}
+.main .text .left .tab {
+  display: flex;
+  margin-top: 20px;
+}
+.main .text .left .tab.aos-animate {
+  transition-delay: 0.9s;
+}
+.main .text .left .tab .item {
+  font-size: 32px;
+  background-image: linear-gradient(to right, #02BBEE, #2836F6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.main .text .left .tab .item:first-child {
+  margin-right: 63px;
+}
+.main .text .left .more {
+  margin-top: 78px;
+  display: flex;
+  align-items: center;
+}
+.main .text .left .more .img{
+  width: 52px;
+    background-image: linear-gradient(to right, #02BBEE, #2836F6);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    height: 52px;
+    margin-right: 15px;
+}
+.main .text .left .more span{
+  font-size: 30px;
+  color: #fff;
+}
+.main .text .left .more.aos-animate {
+  transition-delay: 1.2s;
+}
+.main .text .left .more img {
+  margin-right: 15px;
+}
+.main .text .left .more a {
+  color: #111;
+  font-size: 14px;
+  transition: all 1s;
+}
+.main .text .left .more a:hover {
+  color: #2836F6;
+}
+@media screen and (max-width: 2560px){
+	
+}
+
+
+@media screen and (max-width: 2048px){
+	
+}
+
+@media screen and (max-width: 1856px){
+	.main .text .left .title h2{
+    font-size: 40px;
+  }
+  .main .text .left .line{
+    margin-bottom: 30px;
+  }
+  .main .text .left .more {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1792px){
+	
+}
+
+@media screen and (max-width: 1680px){
+	.main .text .left .title h2 {
+    font-size: 36px;
+  }
+  .main .text {
+    left: 220px;
+  }
+  .main .text .left .tab .item {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1600px){
+	.main .text .left {
+    width: 600px;
+  }
+  .main .text .left .iconlist .item .content h3{
+    font-size: 18px;
+  }
+  .main .text .left .iconlist .item .content p{
+    font-size: 14px;
+  }
+  .main .text .left .more .img {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 1550px){
+  .main .text .left .title h2 {
+    font-size: 28px;
+  }
+  .main .text .left .iconlist .item .content h3 {
+    font-size: 16px;
+  }
+  .main .text .left .tab .item {
+    font-size: 24px;
+  }
+  .main .text .left .more span {
+    font-size: 24px;
+  }
+  .main .text .left .more .img {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .main .text {
+    left: 180px;
+  }
+}
+@media screen and (max-width: 1440px){
+	.main .text .left .title h2 {
+    font-size: 24px;
+  }
+
+  .main .text .left .more {
+    margin-top: 40px;
+  }
+  .main .text .left .tab .item {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+	
+}
+
+@media screen and (max-width: 1366px){
+	
+}
+@media screen and (max-width: 1280px){
+  .main .text .left {
+    width: 540px;
+  }
+  .main .text .left .tab .item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .main .rightbg{
+    display: none;
+  }
+  .main .text .left{
+    width: 100%;
+  }
+  .main .text{
+    height: auto;
+    top:20vh;
+    left: 0;
+    padding: 0 30px;
+  }
+  .main .text .left .line{
+    transform: scaleX(1);
+  }
+
+}
+
+
+
+@media screen and (max-width: 820px){
+
+}
+
+
+@media screen and (max-width: 768px){
+	
+}
+
+
+@media screen and (max-width: 540px){
+  .main .text .left .line{
+    margin-bottom: 20px;
+  }
+  .main .text .left .title h2 {
+    font-size: 28px;
+  }
+  .main .text .left .iconlist{
+    margin-top: 30px;
+  }
+  .main .text {
+    padding: 30px 20px 0;
+    top: 15vh;
+    position: static;
+  }
+  .main .text .left .iconlist .item {
+    width: 100%;
+  }
+  .main .text{
+    position: static;
+  }
+  .main{
+    min-height: 100vh;
+    /* padding-top: 100px; */
+    padding-bottom: 50px;
+  }
+  .main .bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  .main .text .left .line{
+    width: 25px;
+  }
+}
+@media screen and (max-width: 450px){
+	.main .text .left .title h2 {
+    font-size: 24px;
+  }
+  .main .text .left .iconlist {
+    margin-top: 20px;
+  }
+  .main .text .left .iconlist .item .img{
+    transform: scale(.8);
+    margin-right: 5px;
+  }
+  .main .text .left .tab {
+    margin-top: 10px;
+  }
+  .main .text .left .tab .item:first-child {
+    margin-right: 30px;
+  }
+  .main .text .left .more {
+    margin-top: 30px;
+  }
+  .main .text .left .iconlist .item {
+    margin-bottom: 10px;
+  }
+  .main .text .left .iconlist .item .content h3 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .main .text .left .more span {
+    font-size: 24px;
+  }
+  .main .text .left .more .img {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .main .text .left .tab .item{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+	
+}
+
+@media screen and (max-width: 375px){
+	
+}
+
+@media screen and (max-width: 360px){
+	
+}
+
+
+
+
+ 

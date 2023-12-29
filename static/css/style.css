@@ -1,0 +1,199 @@
+/* common */
+
+   
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#my-scrollbar {
+    height: 100vh;
+}
+
+.scroll-content {
+    overflow: hidden;
+}
+
+#Horizontal{
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.scrollX{
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+}
+
+.scrollbar-thumb {
+    width: 5px !important;
+}
+
+@media screen and (max-width: 1365px) {
+    .scrollbar-thumb {
+        width: 0 !important;
+    }
+}
+
+.scrollbar-track-y {
+    z-index: 9999 !important;
+}
+
+.scrollbar-track {
+    background-color: transparent !important;
+    right: 0 !important;
+}
+
+.scrollbar-track:hover {
+    cursor: grab;
+}
+
+.scrollbar-thumb {
+    background: rgba(0, 0, 0, .5) !important;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.bezier .swiper-wrapper {
+    transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+}
+
+/*video*/
+*[onclick*='video_alert(this)'] video {
+    display: none;
+}
+
+.alert_video {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.video_active {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+}
+
+.alert_video .joke {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.alert_video .joke .video {
+    width: 100%;
+    height: 576px;
+    display: block;
+}
+
+.alert_video .joke .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.alert_video .joke .close {
+    margin: 0 0 0 25px;
+    cursor: pointer;
+    height: fit-content;
+    transition: 1s;
+}
+
+.alert_video .joke .close:hover{
+    transform: rotate(90deg);
+}
+
+.alert_video .joke .close svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+.alert_video .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.alert_video.all .joke {
+    width: 100%;
+    height: 100%;
+}
+
+.alert_video.all .joke .video {
+    height: 100%;
+    object-fit: cover;
+}
+
+.alert_video.all .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.alert_video.all .joke .video video {
+    object-fit: cover;
+}
+
+.none {
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+#my-scrollbar .scroll-content section {
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+}
+

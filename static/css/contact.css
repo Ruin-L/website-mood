@@ -1,0 +1,481 @@
+.main{
+  width: calc(100% - 160px);
+  margin-left: 160px;
+}
+.main #map {
+  height: 50vh;
+}
+.main .text {
+  height: 50vh;
+  background-color: #F7F8FA;
+}
+.main .text .box {
+  width: 1520px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .text .box .top {
+  display: flex;
+  /* flex-direction: column; */
+  padding-top: 86px;
+  justify-content: space-between;
+}
+.main .text .box .top .left .title h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+.main .text .box .top .left .list {
+  margin-top: 30px;
+}
+.main .text .box .top .left .list .item {
+  color: #666;
+  line-height: 36px;
+}
+.main .text .box .top .left .list .item:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.main .text .box .top .left .list .item:nth-child(2) {
+  transition-delay: 0.6s;
+}
+.main .text .box .top .left .list .item:nth-child(3) {
+  transition-delay: 0.9s;
+}
+.main .text .box .bottom .left {
+  display: flex;
+}
+.main .text .box .bottom .left .item {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 49px;
+  border: 1px solid #969797;
+  cursor: pointer;
+  transition: all 1s;
+}
+.main .text .box .bottom .left .item:not(:last-child){
+  margin-right: 25px;
+}
+.main .text .box .bottom .left .item:hover {
+  background-color: #2836F6;
+  border-color: #2836F6;
+}
+.main .text .box .bottom .left .item:hover span {
+  color: #fff;
+}
+.main .text .box .bottom .left .item span {
+  font-size: 20px;
+  transition: all 1s;
+}
+.main .text .box .top .right{
+
+  width: 760px;
+}
+.main .text .box .top .right .title h2 {
+  color: #111;
+  font-size: 30px;
+  font-weight: 400;
+}
+.main .text .box .top .right .list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .text .box .top .right .list.aos-animate {
+  transition-delay: 0.3s;
+}
+.main .text .box .top .right .list .item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
+  width: 350px;
+  max-width: 48%;
+  margin-bottom: 37px;
+}
+.main .text .box .top .right .list .item:last-child {
+  width: 100%;
+  max-width: none;
+}
+.main .text .box .top .right .list .item input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+.main .text .box .top .right .button {
+  width: 108px;
+  height: 40px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.main .text .box .top .right .button::after {
+  width: 108px;
+  position: absolute;
+  height: 108px;
+  top: 50%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right, #02BBEE, #2836F6);
+  content: '';
+  transition: all 1s;
+}
+.main .text .box .top .right .button.aos-animate {
+  transition-delay: 0.6s;
+}
+.main .text .box .top .right .button:hover::after {
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+.main .text .box .bottom .right {
+  text-align: right;
+}
+.main .text .box .bottom .right.aos-animate {
+  transition-delay: 0.9s;
+}
+.main .text .box .bottom .right p {
+  color: #666;
+  font-size: 14px;
+}
+.main .text .box .bottom .right p a {
+  color: #666;
+  transition: all 1s;
+}
+.main .text .box .bottom .right p a:hover {
+  color: #2836F6;
+}
+.mapbox {
+  display: flex;
+  align-items: center;
+}
+.mapbox .mapImg {
+  margin-right: 10px;
+}
+.mapbox .mapImg span {
+  color: #F34234;
+  font-size: 30px;
+}
+.mapbox .mapText {
+  background-color: #fff;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.mapbox .mapText::before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  border: 5px solid transparent;
+  border-right-color: #fff;
+}
+.mapbox .mapText p {
+  padding: 5px 10px;
+}
+.mapbox .mapText a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #F7F8FA;
+  transition: all 1s;
+}
+.mapbox .mapText a span {
+  transition: all 1s;
+  font-size: 20px;
+  color: #2C9EFF;
+}
+.mapbox .mapText a:hover {
+  background-color: #2C9EFF;
+}
+.mapbox .mapText a:hover span {
+  color: #F7F8FA;
+}
+
+.main .text .box .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.main .text .box .top .right .button p{
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 2560px){
+	
+}
+
+
+@media screen and (max-width: 2048px){
+	
+}
+
+@media screen and (max-width: 1856px){
+	.main #map {
+    height: 40vh;
+  }
+  .main .text {
+    height: 60vh;
+  }
+  .main .text .box .right{
+    padding-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 1792px){
+	
+}
+
+@media screen and (max-width: 1680px){
+  .main .text .box .top .left .title h2,
+	.main .text .box .top .right .title h2{
+    font-size: 28px;
+  }
+  .main .text .box .top {
+    padding-top: 60px;
+  }
+  .main .text .box .top .right {
+    width: 60%;
+  }
+  .main .text .box .top .right .list .item {
+    margin-bottom: 30px;
+  }
+  .main{
+    width: calc(100% - 140px);
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width: 1600px){
+	
+}
+@media screen and (max-width: 1550px){
+  .main .text .box .top {
+    padding-top: 40px;
+  }
+  .main .text .box .top .right .list .item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .main .text .box .top .right .button {
+    font-size: 16px;
+    width: 90px;
+    height: 36px;
+  }
+  .main .text .box .top .right .list {
+    margin-top: 30px;
+  }
+  .main .text .box .bottom .left .item span {
+    font-size: 18px;
+  }
+  .main .text .box .bottom .left .item {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .main #map {
+    height: 35vh;
+  }
+  .main .text {
+    height: 65vh;
+  }
+}
+@media screen and (max-width: 1440px){
+	.main .text .box .top {
+    padding-top: 40px;
+  }
+  .main .text .box .top .right .button {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .main .text .box{
+    padding-bottom: 40px;
+  }
+  .main .text .box .top .right .list {
+    margin-top: 20px;
+  }
+  .main .text .box .top .right .list .item {
+    margin-bottom: 20px;
+  }
+  .main .text .box .top .right .button{
+    margin-top: 20px;
+  }
+  .main .text .box .top .left .title h2, .main .text .box .top .right .title h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+	
+}
+
+@media screen and (max-width: 1366px){
+	
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.main{
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  /* .main #map{
+    height: 300px;
+  } */
+  .main .text{
+    height: auto;
+  }
+  .main .text .box .top .right {
+    width: 55%;
+  }
+  .main .text .box{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main .text .box .top{
+    margin-bottom: 50px;
+  }
+  .main .text .box .top .right .title h2 {
+    font-size: 24px;
+  }
+  .main .text .box{
+    min-height: 70vh;
+  }
+}
+
+
+@media screen and (max-width: 820px){
+  .main .text .box .top{
+    flex-direction: column;
+  }
+  .main .text .box .top .left .list {
+    margin-top: 10px;
+  }
+  .main .text .box .top .right{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .main .text .box .bottom{
+    flex-direction: column;
+  }
+  .main .text .box .bottom .right{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .main .text .box{
+    padding-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width: 540px){
+	.mapbox .mapText p{
+    font-size: 14px;
+  }
+  .main .text .box{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main .text .box .top {
+    padding-top: 20px;
+  }
+  .main .text .box .top .left .title h2, .main .text .box .top .right .title h2 {
+    font-size: 24px;
+  }
+  .main .text .box .top .left .list .item{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .main .text .box .top .right .list .item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  .main .text .box .bottom .left .item span {
+    font-size: 18px;
+  }
+  .main .text .box .bottom .left .item {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .main .text .box .bottom .right{
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px){
+  .main .text .box .top .left .list .item,
+	.main .text .box .top .title{
+    text-align: center;
+  }
+  .main .text .box .top .right .button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .main .text .box {
+    padding-bottom: 10px;
+  }
+  .main .text .box .top {
+    margin-bottom: 30px;
+  }
+  .main .text .box .bottom .left .item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .main .text .box .bottom .left{
+    justify-content: center;
+  }
+  .main .text .box .bottom .right{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 414px){
+  .main .text .box .top .right{
+    margin-top: 20px;
+  }
+  .main .text .box .top .right .list .item{
+    width: 100%;
+    max-width: none;
+  }
+  .main .text .box .top .left .title h2, .main .text .box .top .right .title h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px){
+	
+}
+
+@media screen and (max-width: 360px){
+	
+}
+
+
+
+
+ 
